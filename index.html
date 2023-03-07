@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input box</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        color: white;
+        margin-top: 20px;
+      }
+
+      .manediv {
+        width: 400px;
+        background: rgb(73, 69, 69);
+        padding-left: 25px;
+        border-radius: 8px;
+      }
+
+      .boxdiv {
+        margin: 8px 0;
+        color: rgb(207, 196, 196);
+      }
+
+      .in {
+        width: 300px;
+        height: 30px;
+        background: #00000000;
+        border: 2px solid rgb(79, 79, 238);
+        padding-left: 8px;
+      }
+
+      h3 {
+        margin: 5px 0;
+        color: white;
+      }
+
+      input:checked + label {
+        color: blue;
+      }
+
+      button {
+        width: 300px;
+        height: 30px;
+        margin-top: 13px;
+        margin-bottom: 20px;
+        background: green;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="manediv">
+      <h2>Register</h2>
+
+      <div class="boxdiv">
+        <label for="First Name">First Name</label><br />
+        <input
+          id="First Name"
+          class="in"
+          placeholder="First Name"
+          type="text"
+        />
+      </div>
+      <div class="boxdiv">
+        <label for="last Name">last Name</label><br />
+        <input id="last Name" class="in" placeholder="last Name" type="text" />
+      </div>
+      <div class="boxdiv">
+        <label for="Your email">Your email</label><br />
+        <input
+          id="Your email"
+          class="in"
+          placeholder="Your email"
+          type="email"
+        />
+      </div>
+      <div class="boxdiv">
+        <label for="Phone number">Phone number</label><br />
+        <input
+          id="Phone number"
+          class="in"
+          placeholder="Phone number"
+          type="number"
+        />
+      </div>
+      <div class="boxdiv">
+        <label for="Password">Password</label><br />
+        <input
+          id="Password"
+          class="in"
+          placeholder="Password"
+          type="Password"
+        />
+      </div>
+      <div class="boxdiv">
+        <label for="Confirm Password">Confirm Password</label><br />
+        <input
+          id="Confirm Password"
+          class="in"
+          placeholder="Confirm Password"
+          type="Password"
+        />
+      </div>
+
+      <div class="rd">
+        <h3>Gender</h3>
+        <input type="radio" id="Male" name="gender" />
+        <label for="Male">Male</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">female</label>
+        <input type="radio" id="others" name="gender" />
+        <label for="others">others</label>
+      </div>
+      <button>Register</button>
+    </div>
+  </body>
+</html>
